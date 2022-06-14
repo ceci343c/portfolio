@@ -1,0 +1,105 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#game_elements {
+  width: 2000px;
+  height: 100%;
+  position: absolute;
+  margin-left: -1060px;
+  margin-top: -100px;
+}
+
+#blaa_container {
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+
+#blaa_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(smile_blue1.svg);
+  background-size: 100%;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #game_elements {
+    width: 2000px;
+    height: 100%;
+    position: absolute;
+    margin-left: -1180px;
+    margin-top: -70px;
+  }
+}
+
+/* Animation blinkende portræt */
+
+/* Animation blinkende portræt */
+
+#mig {
+  width: 500px;
+  height: 500px;
+  background-size: 300% 100%;
+  background-image: url(miganimation.svg);
+  margin-left: 200px;
+  margin-top: 80px;
+  margin-bottom: 85px;
+}
+
+.blinking {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-timing-function: steps(3);
+  animation-iteration-count: infinite;
+  margin-left: 10%;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+@keyframes blink {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300% 0%;
+  }
+}
+@media (max-width: 500px) {
+  #mig {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,769 @@
+html {
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* FORSIDE */
+
+/* Baggrundsbillede til forsiden */
+
+.splash {
+  background-image: url(splash.svg);
+  background-size: cover;
+  background-position: right bottom;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Overskrifter til forsiden */
+
+.h1_1 {
+  position: relative;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  top: 90px;
+}
+/* Position: Relative er anvendt for at top kan anvise, hvor langt ned på siden teksten skal være */
+
+.h2_1 {
+  position: relative;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  top: 120px;
+}
+
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+  .h1_1 {
+    font-size: 84px;
+  }
+
+  .h2_1 {
+    font-size: 42px;
+    top: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1_1 {
+    font-size: 54px;
+  }
+
+  .h2_1 {
+    font-size: 27px;
+    top: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .h1_1 {
+    font-size: 34px;
+  }
+
+  .h2_1 {
+    font-size: 17px;
+    top: 100px;
+  }
+}
+
+/* OM MIG */
+
+html {
+  cursor: default;
+  overflow-x: hidden;
+}
+
+
+/* Gør columns responsiv */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.cards h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin-top: 80px;
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+.cards p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+/* Link til CV - PDF */
+
+.link {
+  color: #58cde1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+/* Mobil */
+
+@media (max-width: 500px) {
+  .cards h1 {
+    font-size: 30px;
+    margin-right: 0;
+    margin-top: -30px;
+    margin-left: 20px;
+  }
+
+  .cards p {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 70px;
+    margin-left: 20px;
+  }
+
+  .link {
+    margin-left: 5px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  #mig {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* PORTFOLIO SIDE */
+
+/* Grundlæggende WEB */
+
+/* Overordnede container til projektsiden (portfolio) */
+.portfolio_web {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+/* billede til grundlæggende web */
+.projektbeskrivelseWeb img {
+  width: 500px;
+  margin-left: 111px;
+  margin-top: 20px;
+}
+
+/* Overskrift til hele tiden - Mine projekter */
+
+.overskriftWeb {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.overskrift h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overskrift p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.projektbeskrivelseWeb h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelseWeb p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.perspektiveringWeb h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.perspektiveringWeb p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.linkweb {
+  color: #58cde1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+/* Mobil version Portfolio - Grundlæggende WEB */
+@media (max-width: 500px) {
+  .overskrift h1 {
+    text-align: center;
+  }
+
+  .portfolio_web {
+    gap: 0;
+  }
+
+  .overskrift p {
+    text-align: center;
+  }
+
+  .portfolio_web img {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .perspektiveringWeb h2 {
+    margin-left: -415px;
+    margin-top: 930px;
+  }
+  .perspektiveringWeb p {
+    margin-left: -415px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .linkweb {
+    margin-left: -415px;
+  }
+}
+
+/* Grundlæggende UX */
+
+/* Overordnede container til projektsiden (portfolio) */
+.portfolio_UX {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+/* billede til grundlæggende web */
+.projektbeskrivelseUX img {
+  width: 500px;
+  margin-left: 111px;
+  margin-top: 20px;
+}
+
+/* Overskrift til hele tiden - Mine projekter */
+
+.overskriftUX {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.projektbeskrivelseUX h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelseUX p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.perspektiveringUX h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.perspektiveringUX p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.linkux {
+  color: #58cde1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+/* Mobil version Portfolio - Grundlæggende UX */
+@media (max-width: 500px) {
+  .overskrift h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .portfolio_UX {
+    gap: 0;
+  }
+
+  .portfolio_UX img {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .perspektiveringUX h2 {
+    margin-left: -415px;
+    margin-top: 770px;
+  }
+  .perspektiveringUX p {
+    margin-left: -415px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .linkux {
+    margin-left: -415px;
+  }
+}
+
+/* Animation */
+
+/* Overordnede container til projektsiden (portfolio) */
+.portfolio_ani {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+/* billede til grundlæggende web */
+.projektbeskrivelseani img {
+  width: 500px;
+  margin-left: 111px;
+  margin-top: 20px;
+}
+
+/* Overskrift til hele tiden - Mine projekter */
+
+.overskriftAnimation {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.projektbeskrivelseani h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelseani p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.perspektiveringani h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.perspektiveringani p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.linkani {
+  color: #58cde1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+/* Mobil version Portfolio - Grundlæggende animation */
+@media (max-width: 500px) {
+  .overskriftAnimation h1 {
+    text-align: center;
+  }
+
+  .portfolio_ani {
+    gap: 0;
+  }
+
+  .portfolio_ani img {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .perspektiveringani h2 {
+    margin-left: -415px;
+    margin-top: 840px;
+  }
+  .perspektiveringani p {
+    margin-left: -415px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .linkani {
+    margin-left: -415px;
+  }
+}
+
+/* Grundlæggende Indhold */
+
+/* Overordnede container til projektsiden (portfolio) */
+.portfolio_ind {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+/* billede til grundlæggende web */
+.projektbeskrivelseind img {
+  width: 500px;
+  margin-left: 111px;
+  margin-top: 20px;
+}
+
+/* Overskrift til hele tiden - Mine projekter */
+
+.overskriftIndhold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.projektbeskrivelseind h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelseind p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.perspektiveringind h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.perspektiveringind p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.linkind {
+  color: #58cde1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+/* Mobil version Portfolio - indhold */
+@media (max-width: 500px) {
+  .overskriftIndhold h1 {
+    text-align: center;
+  }
+
+  .portfolio_ind {
+    gap: 0;
+  }
+
+  .portfolio_ind img {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .perspektiveringind h2 {
+    margin-left: -415px;
+    margin-top: 940px;
+  }
+  .perspektiveringind p {
+    margin-left: -415px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .linkind {
+    margin-left: -415px;
+  }
+}
+
+/* Om mit website */
+
+/* Overskriften her har samme classnavn som den på portfolio siden da layoutet er ens*/
+
+.overskrift img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 20px;
+}
+
+/* Overskrift til hele tiden - Mine projekter */
+
+.overskriftstil {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.portfolio_stil {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+/* Navnene på classerne i beskrivelse af stil og opbygning */
+
+.projektbeskrivelsestil h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelsestil p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.projektbeskrivelsestil1 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelsestil1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.oversigtdesign h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.oversigtdesign ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.overskriftbegreb {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 60px;
+
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #8c989b;
+  padding: 20px;
+}
+
+.portfolio_begreb {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 18fr 18fr;
+}
+
+.oversigtTest ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* Navnene på classerne i beskrivelse af stil og opbygning */
+
+.projektbeskrivelsebegreb h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelsebegreb p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.projektbeskrivelsebegreb1 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.projektbeskrivelsebegreb1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.oversigtbegreb h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.linkbegreb {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #58cde1;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+/* Mobil version - Mit Website */
+@media (max-width: 500px) {
+  .overskriftstil h1 {
+    text-align: center;
+  }
+
+  .portfolio_stil {
+    grid-template-columns: none;
+  }
+
+  .oversigtdesign h2 {
+    margin-left: 20px;
+    margin-top: 2px;
+  }
+
+  .oversigtdesign ul {
+    margin-left: 40px;
+  }
+
+  .projektbeskrivelsestil p {
+    margin-right: 15px;
+  }
+
+  .projektbeskrivelsestil1 h2 {
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .overskriftbegreb h1 {
+    text-align: center;
+  }
+
+  .portfolio_begreb {
+    grid-template-columns: none;
+  }
+
+  .projektbeskrivelsebegreb p {
+    margin-right: 15px;
+  }
+
+  .projektbeskrivelsebegreb1 p {
+    margin-right: 10px;
+  }
+  .projektbeskrivelsebegreb1 h2 {
+    margin-top: -30px;
+    margin-right: 10px;
+  }
+
+  .oversigtTest {
+    margin-top: -30px;
+  }
+}
