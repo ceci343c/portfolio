@@ -82,7 +82,7 @@ html {
 /* Gør columns responsiv */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
 .cards h1 {
@@ -169,7 +169,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   margin-top: 60px;
-
   font-weight: bold;
   text-align: center;
   color: white;
@@ -245,24 +244,55 @@ html {
   }
 
   .portfolio_web img {
-    width: 420px;
-    margin-left: 15px;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
+  
   }
 
   .perspektiveringWeb h2 {
-    margin-left: -415px;
+<<<<<<< HEAD
+    margin-left: -430px;
+=======
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
     margin-top: 930px;
+   
+
+
   }
   .perspektiveringWeb p {
-    margin-left: -415px;
+<<<<<<< HEAD
+    margin-left: -430px;
+=======
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
     margin-top: 20px;
     margin-bottom: 10px;
     margin-right: 30px;
   }
 
   .linkweb {
-    margin-left: -415px;
+<<<<<<< HEAD
+    margin-left: -430px;
   }
+
+  .overskriftWeb {
+    
+    font-size: 20px;
+
+  }
+=======
+    margin-left: -355px;
+  }
+
+  .overskriftWeb {
+    
+    font-size: 20px;
+
+  }
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
+  
 }
 
 /* Grundlæggende UX */
@@ -336,7 +366,7 @@ html {
 @media (max-width: 500px) {
   .overskrift h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
   }
 
   .portfolio_UX {
@@ -344,23 +374,42 @@ html {
   }
 
   .portfolio_UX img {
-    width: 420px;
-    margin-left: 15px;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .perspektiveringUX h2 {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
     margin-top: 770px;
   }
   .perspektiveringUX p {
-    margin-left: -415px;
+   margin-left: -430px;
+=======
+    margin-left: -355px;
+    margin-top: 770px;
+  }
+  .perspektiveringUX p {
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
     margin-top: 20px;
     margin-bottom: 10px;
     margin-right: 30px;
   }
 
   .linkux {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
+=======
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
+  }
+
+  .overskriftUX {
+    
+    font-size: 20px;
+
   }
 }
 
@@ -442,23 +491,42 @@ html {
   }
 
   .portfolio_ani img {
-    width: 420px;
-    margin-left: 15px;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .perspektiveringani h2 {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
+    margin-top: 790px;
+  }
+  .perspektiveringani p {
+   margin-left: -430px;
+=======
+    margin-left: -355px;
     margin-top: 840px;
   }
   .perspektiveringani p {
-    margin-left: -415px;
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
     margin-top: 20px;
     margin-bottom: 10px;
     margin-right: 30px;
   }
 
   .linkani {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
+=======
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
+  }
+
+  .overskriftAnimation {
+    
+    font-size: 20px;
+
   }
 }
 
@@ -540,23 +608,42 @@ html {
   }
 
   .portfolio_ind img {
-    width: 420px;
-    margin-left: 15px;
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .perspektiveringind h2 {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
+    margin-top: 890px;
+  }
+  .perspektiveringind p {
+   margin-left: -430px;
+=======
+    margin-left: -355px;
     margin-top: 940px;
   }
   .perspektiveringind p {
-    margin-left: -415px;
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
     margin-top: 29px;
     margin-bottom: 10px;
     margin-right: 30px;
   }
 
   .linkind {
-    margin-left: -415px;
+<<<<<<< HEAD
+   margin-left: -430px;
+=======
+    margin-left: -355px;
+>>>>>>> 5dbe4de9279efc85740737c23ed87f93a9d46281
+  }
+
+  .overskriftIndhold {
+    
+    font-size: 20px;
+
   }
 }
 
@@ -720,6 +807,7 @@ html {
 @media (max-width: 500px) {
   .overskriftstil h1 {
     text-align: center;
+    font-size: 20px;
   }
 
   .portfolio_stil {
@@ -735,6 +823,12 @@ html {
     margin-left: 40px;
   }
 
+  .overskrift img {
+   
+    width: 100%;
+    
+  }
+
   .projektbeskrivelsestil p {
     margin-right: 15px;
   }
@@ -745,6 +839,7 @@ html {
   }
   .overskriftbegreb h1 {
     text-align: center;
+    font-size: 20px;
   }
 
   .portfolio_begreb {
